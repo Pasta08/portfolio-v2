@@ -37,22 +37,17 @@ export default {
                 20: "0.2",
                 95: "0.95",
               },
+              animation: {
+                'scroll': 'scroll 15s linear infinite',
+                'scroll-delayed-1': 'scroll 15s linear infinite -5s',
+              },
               keyframes: {
-                scroll: {
-                  '0%': { transform: 'translateX(100)' },
-                  '100%': { transform: 'translateX(-100%)' }  // Moves exactly one set width (including gap)
+                'scroll': {
+                  '0%': { transform: 'translateX(0)' },
+                  '100%': { transform: 'translateX(-102%)' },
                 }
               },
-              animation: {
-                'scroll': 'scroll 20s linear infinite',
-                'scroll-paused': 'scroll 20s linear infinite paused',
-              }
         },
-        variants: {
-            extend: {
-              animation: ['hover', 'group-hover'],
-            },
-          },
     },
     plugins: [],
 } satisfies Config;
