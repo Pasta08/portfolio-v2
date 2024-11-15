@@ -7,7 +7,7 @@ import { IconsPath } from '../utils/icon'
 
 const Intro = () => {
   return (
-    <div className='border-[1px] p-2 border-gray-300 border-opacity-30 rounded-xl md:p-4 bg-gray-400 bg-opacity-[0.01] backdrop-blur-sm'>
+    <div className='border-[1px] p-2 border-gray-300 border-opacity-30 rounded-xl md:p-4 bg-gray-400 bg-opacity-[0.01] backdrop-blur-sm hover:border-opacity-70 transition-all duration-200 ease-in-out'>
       <div className='flex gap-2 items-center md:gap-4'>
         <div className=''>
           <Image src={'/images/profile-pic.png'} alt='profile' width={75} height={75} />
@@ -19,7 +19,7 @@ const Intro = () => {
       </div>
       <div className='flex flex-wrap gap-2 mt-4 md:mt-8'>
         <Chip text='Freelancer' iconPath={IconsPath.Freelance} />
-        <Chip text='Italy' />
+        <Chip text='Italy' iconPath={IconsPath.Location}/>
         <Chip text='Music Addict' />
         <Chip text='UTC+2' />
         <Chip text='Italian & English' />
@@ -33,5 +33,6 @@ const Intro = () => {
   )
 
 }
+
 
 export default Intro

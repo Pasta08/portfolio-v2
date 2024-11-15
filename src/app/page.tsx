@@ -3,12 +3,14 @@ import { IconsPath } from "./utils/icon";
 import Intro from "./components/Intro";
 import TechSection from "./components/TechSection";
 import Card from "./components/Card";
+import WorkExperience from "./components/WorkExperience";
+import React, { Suspense } from "react";
 
 export default function Home() {
   return (
-    <div className="">
+    <React.Fragment>
       <main
-        className="max-w-screen-xlarge mx-auto flex flex-wrap justify-between p-2 md:p-5"
+        className="max-w-screen-large mx-auto flex flex-wrap justify-between p-2 md:p-5 h-screen"
         style={{
           backgroundImage: "url('/images/background-image.jpg')",
           backgroundSize: "cover",
@@ -16,28 +18,27 @@ export default function Home() {
         }}
       >
         <div className="w-full md:w-2/5">
-          <div className="">
+          <Suspense fallback={<div>Loading...</div>}>
             <Intro />
-          </div>
-          <div className="mt-2 md:mt-3">
+          </Suspense>
+          <section className="mt-2 md:mt-3">
             <TechSection />
-
-          </div>
-          <div className="flex justify-between gap-2 md:gap-3 mt-2 md:mt-3">
+          </section>
+          <section className="flex justify-between gap-2 md:gap-3 mt-2 md:mt-3">
             <Card text="5+" chipText="Clients" />
             <Card text="2yrs+" chipText="Expertise" />
             <Card text="8+" chipText="Projects" />
-          </div>
+          </section>
         </div>
         <div className="w-full md:w-[59%]">
-          <div className="border-[1px] p-2 border-gray-300 border-opacity-30 rounded-xl">
-          test
-          </div>
+          <section className="border-[1px] p-2 border-gray-300 border-opacity-30 bg-gray-400 bg-opacity-[0.01] backdrop-blur-sm rounded-xl hover:border-opacity-70 transition-all duration-200 ease-in-out mt-2 md:mt-0">
+            <WorkExperience />
+          </section>
         </div>
       </main>
       <footer className="">
         {/* Footer content here */}
       </footer>
-    </div>
+    </React.Fragment>
   );
 }

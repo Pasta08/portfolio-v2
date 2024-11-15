@@ -8,7 +8,7 @@ interface Props {
 
 const Card: React.FC<Props> = ({text, chipText}) => {
   return (
-    <div className='border w-full border-gray-300 border-opacity-30 rounded-xl px-2 py-5 flex justify-center items-center flex-col'>
+    <div className='border w-full border-gray-300 border-opacity-30 rounded-xl hover:border-opacity-70 transition-all duration-200 ease-in-out px-2 py-5 flex justify-center items-center flex-col'>
       {text}
       <Chip text={chipText}/>
     </div>

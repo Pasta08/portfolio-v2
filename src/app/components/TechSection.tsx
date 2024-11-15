@@ -13,7 +13,7 @@ type ScrollingRowProps = {
 };
 
 const ScrollingRow: React.FC<ScrollingRowProps> = ({ technologies, animationClass }) => (
-  <div className="mt-4 relative overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+  <div className="mt-3 relative overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
     <div className="flex gap-3">
       <div className={`flex gap-3 ${animationClass}`}>
         {technologies.map((tech, index) => (
@@ -46,7 +46,7 @@ const TechSection: React.FC = () => {
   ];
 
   return (
-    <div className="border border-gray-300 border-opacity-30 rounded-xl p-2 md:p-4">
+    <div className="border border-gray-300 border-opacity-30 bg-gray-300 bg-opacity-[0.01] backdrop-blur-sm rounded-xl hover:border-opacity-70 transition-all duration-200 ease-in-out p-2 md:p-4">
       <div>
         <div className="flex justify-between">
           <div className="flex">

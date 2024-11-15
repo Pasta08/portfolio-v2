@@ -26,6 +26,7 @@ const path = '/icons/'
 
 export enum IconsPath {
 
-  Freelance = path + 'building-solid.svg'
+  Freelance = path + 'building-solid.svg',
+  Location = path + 'map-pin-solid.svg'
 
 }

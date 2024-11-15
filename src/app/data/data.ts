@@ -1,4 +1,14 @@
-const experiences = [
+export interface Experience {
+    companyName: string;
+    status: string;
+    role: string;
+    roleDescription: string;
+    mostUsedTechnologies: string[];
+    clients: string[];
+  }
+  
+
+export const experiences: Experience[] = [
     {
         companyName: "Freelance",
         status: "Currently working",
