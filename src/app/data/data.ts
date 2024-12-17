@@ -12,18 +12,16 @@ export const experiences: Experience[] = [
     {
         companyName: "Freelance",
         status: "Currently working",
-        role: "Full Stack Developer",
+        role: "Front End Developer",
         roleDescription:
-            "Full Stack developer skilled in Next.js, TypeScript, React, and SvelteKit, creating reusable components and responsive pages. Experienced in collaborating with back-end developers and designers to integrate client requirements and maintain production-ready code",
+            "Focused on front-end development with Next.js, TypeScript, React, created reusable and efficient components based on specific designs. Close collaboration with the back end team and designers to effectively integrate client requirements.",
         mostUsedTechnologies: [
             "React",
-            "Svelte",
-            "Vue",
             "SEO",
             "Tailwind",
             "Astro",
-            "Node",
-            "Typescript",
+            "NextJs",
+            "Typescript"
         ],
         clients: ["Eni, Mediaset Group", "Dshare"],
     },
@@ -50,7 +48,7 @@ export const experiences: Experience[] = [
         status: "09/2022 - 03/2023",
         role: "Full Stack Developer",
         roleDescription:
-            "Full Stack developer skilled in Next.js, TypeScript, React, and SvelteKit, creating reusable components and responsive pages. Experienced in collaborating with back-end developers and designers to integrate client requirements and maintain production-ready code",
+            "Development of back-end services, controllers, and REST APIs using Java and Spring, including writing MySQL queries for database interaction. Creation of reusable components and web pages with Angular and React. Maintenance and testing of production code.",
         mostUsedTechnologies: [
             "Angular",
             "Java",
@@ -66,14 +64,14 @@ export const experiences: Experience[] = [
         status: "09/2021 - 03/2022",
         role: "Full Stack Developer",
         roleDescription:
-            "Full Stack developer skilled in Next.js, TypeScript, React, and SvelteKit, creating reusable components and responsive pages. Experienced in collaborating with back-end developers and designers to integrate client requirements and maintain production-ready code",
+            "Design and implementation of React components. Styling of pages and components primarily using Sass and Styled Components. Occasional use of Node.js and the Express framework to support backend operations",
         mostUsedTechnologies: [
-            "Angular",
-            "Java",
-            "Spring Boot",
-            "Oracle DB",
-            "SQL",
             "Javascript",
+            "Typescript",
+            "NodeJs",
+            "NestJS",
+            "MongoDB",
+            "NextJs",
         ],
         clients: ["Intesa San Paolo"],
     },
