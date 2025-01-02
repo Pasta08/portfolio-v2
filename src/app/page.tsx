@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { IconsPath } from "./utils/icon";
+import { IconsPath } from "../utils/icon";
 import Intro from "./components/Intro";
 import TechSection from "./components/TechSection";
 import Card from "./components/Card";

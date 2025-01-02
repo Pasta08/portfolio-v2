@@ -1,4 +1,4 @@
-import { sizes } from '@/app/utils/icon';
+import { sizes } from '@/utils/icon';
 import React from 'react';
 
 interface Props {

@@ -3,7 +3,7 @@ import Chip from './common/Chip'
 import Image from 'next/image'
 import Button from './common/Button'
 import { titleLarge } from '../styles/mix'
-import { IconsPath } from '../utils/icon'
+import { IconsPath } from '../../utils/icon'
 
 const Intro = () => {
   return (
