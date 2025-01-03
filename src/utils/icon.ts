@@ -38,6 +38,7 @@ export enum IconsPath {
   NextJs = path + 'nextjs-icon.svg',
   Javascript = path + 'javascript-icon.svg',
   Tailwind = path + 'tailwind-icon.svg',
-  Typescript = path + 'typescript-icon.svg'
+  Typescript = path + 'typescript-icon.svg',
+  Vue = path + 'vue-icon.svg'
 
 }

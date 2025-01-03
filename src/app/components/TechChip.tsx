@@ -10,7 +10,7 @@ interface Props {
 
 const TechChip: React.FC<Props> = ({text, iconPath = ''}) => {
   return (
-    <div className={`mx-2 ${label} border-[1px] p-2 border-gray-300 border-opacity-30 bg-primary-200 rounded-xl px-4  flex items-center justify-center gap-2`}><Icon size={5} path={iconPath}/>{text}</div>
+    <div className={`mx-1 ${label} border-[1px] p-2 border-gray-300 border-opacity-30 bg-primary-200 rounded-xl px-4  flex items-center justify-center gap-2`}><Icon size={5} path={iconPath}/>{text}</div>
   )
 }
 

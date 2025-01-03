@@ -5,17 +5,18 @@ import TechSection from "./components/TechSection";
 import Card from "./components/Card";
 import WorkExperience from "./components/WorkExperience";
 import React, { Suspense } from "react";
+import {titleLarge, titleMedium } from "./styles/mix";
 
 export default function Home() {
   return (
     <React.Fragment>
       <main
         className="max-w-screen-large mx-auto flex flex-wrap justify-between p-2 md:p-5 h-screen"
-        style={{
-          backgroundImage: "url('/images/background-image.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+        // style={{
+        //   backgroundImage: "url('/images/background-image.jpg')",
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        // }}
       >
         <div className="w-full md:w-2/5">
           <Suspense fallback={<div>Loading...</div>}>
@@ -30,6 +31,7 @@ export default function Home() {
             <Card text="8+" chipText="Projects" />
           </section>
         </div>
+        {/* <div className="md:hidden w-full mt-3"><h2 className={`${titleLarge} text-center`}>WorkExperience</h2></div> */}
         <div className="w-full md:w-[59%]">
           <section className="border-[1px] p-2 border-gray-300 border-opacity-30 bg-gray-400 bg-opacity-[0.01] backdrop-blur-sm rounded-xl hover:border-opacity-70 transition-all duration-200 ease-in-out mt-2 md:mt-0">
             <WorkExperience />

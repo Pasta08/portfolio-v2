@@ -1,5 +1,6 @@
 import React from 'react'
 import Chip from './common/Chip'
+import { IconsPath } from '@/utils/icon'
 
 interface Props {
   text: string
