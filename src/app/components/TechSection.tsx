@@ -15,7 +15,6 @@ const TechSection: React.FC = () => {
         <div className='flex'>
           <motion.div className='flex flex-shrink-0' initial={{ x: 0 }} animate={{ x: "-100%" }} transition={{ duration: 15, repeat: Infinity, ease: 'linear' }} >
             {topRow.map((item, index) => {
-              console.log(item.icon)
               return (
                 <TechChip text={item.text} iconPath={item.icon} key={index} />
               )
@@ -32,7 +31,6 @@ const TechSection: React.FC = () => {
         <div className='flex mt-2'>
           <motion.div className='flex flex-shrink-0' initial={{ x: 0 }} animate={{ x: "-100%" }} transition={{ duration: 20, repeat: Infinity, ease: 'linear' }} >
             {midRow.map((item, index) => {
-              console.log(item.icon)
               return (
                 <TechChip text={item.text} iconPath={item.icon} key={index} />
               )
@@ -40,7 +38,6 @@ const TechSection: React.FC = () => {
           </motion.div>
           <motion.div className='flex flex-shrink-0' initial={{ x: 0 }} animate={{ x: "-100%" }} transition={{ duration: 20, repeat: Infinity, ease: 'linear' }} >
             {midRow.map((item, index) => {
-              console.log(item.icon)
               return (
                 <TechChip text={item.text} iconPath={item.icon} key={index} />
               )
@@ -50,7 +47,6 @@ const TechSection: React.FC = () => {
         <div className='flex mt-2'>
           <motion.div className='flex flex-shrink-0' initial={{ x: 0 }} animate={{ x: "-100%" }} transition={{ duration: 10, repeat: Infinity, ease: 'linear' }} >
             {midRow.map((item, index) => {
-              console.log(item.icon)
               return (
                 <TechChip text={item.text} iconPath={item.icon} key={index} />
               )
@@ -58,7 +54,6 @@ const TechSection: React.FC = () => {
           </motion.div>
           <motion.div className='flex flex-shrink-0' initial={{ x: 0 }} animate={{ x: "-100%" }} transition={{ duration: 10, repeat: Infinity, ease: 'linear' }} >
             {midRow.map((item, index) => {
-              console.log(item.icon)
               return (
                 <TechChip text={item.text} iconPath={item.icon} key={index} />
               )

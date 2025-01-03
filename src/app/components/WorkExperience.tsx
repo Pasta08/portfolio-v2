@@ -47,16 +47,6 @@ const WorkExperience = () => {
       );
     });
   };
-  const renderSelectMobile = () => {
-    return experiences.map((item, index) => {
-
-      return (
-        <div key={`job n: ${index}`}>
-
-        </div>
-      )
-    })
-  }
 
   return (
     <div className="md:flex md:gap-3 px-1 justify-center">
