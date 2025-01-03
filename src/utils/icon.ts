@@ -1,3 +1,5 @@
+import React from "react";
+
 export const sizes = {
   1: 'w-1 h-1',
   1.5: 'w-1.5 h-1.5',
@@ -27,6 +29,15 @@ const path = '/icons/'
 export enum IconsPath {
 
   Freelance = path + 'building-solid.svg',
-  Location = path + 'map-pin-solid.svg'
+  Location = path + 'map-pin-solid.svg',
+  Music = path + 'music-solid.svg',
+  UTC = path + 'utc.svg',
+  Book = path + 'book-open-solid.svg',
+  React = path + 'react-icon.svg',
+  Astro = path + 'astro-icon.svg',
+  NextJs = path + 'nextjs-icon.svg',
+  Javascript = path + 'javascript-icon.svg',
+  Tailwind = path + 'tailwind-icon.svg',
+  Typescript = path + 'typescript-icon.svg'
 
 }

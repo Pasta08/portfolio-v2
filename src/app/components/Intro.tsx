@@ -20,10 +20,10 @@ const Intro = () => {
       <div className='flex flex-wrap gap-2 mt-4 md:mt-8'>
         <Chip text='Freelancer' iconPath={IconsPath.Freelance} />
         <Chip text='Italy' iconPath={IconsPath.Location}/>
-        <Chip text='Music Addict' />
-        <Chip text='UTC+2' />
-        <Chip text='Italian & English' />
-        <Chip text='Reader' />
+        <Chip text='Music Addict' iconPath={IconsPath.Music} />
+        <Chip text='UTC+2'/>
+        <Chip text='Italian & English'iconPath={IconsPath.UTC}  />
+        <Chip text='Reader' iconPath={IconsPath.Book} />
       </div>
       <div className='flex flex-col items-center justify-center mt-8 gap-3'>
         <Button text='Get in touch' primary/>
