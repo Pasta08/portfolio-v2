@@ -10,7 +10,7 @@ const Contact = () => {
 
   const handleSendEmail = (e: FormEvent) => {
     e.preventDefault();
-    const email = 'example@example.com'; // Replace with your email address
+    const email = 'ethan.boneortega@gmail.com'; // Replace with your email address
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=Hello, my name is ${encodeURIComponent(firstName)} ${encodeURIComponent(lastName)}.`;
     window.location.href = mailtoLink;
   };
