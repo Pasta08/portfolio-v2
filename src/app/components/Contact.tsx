@@ -46,14 +46,14 @@ const Contact = () => {
             className='focus-visible:outline-none focus-visible:border-opacity-100 font-montserrat w-full h-10 bg-transparent border-[1px] rounded-md border-gray-300 border-opacity-30 text-white placeholder:text-gray-500 indent-2'
           />
 
-          <input
-            type="text"
+          <textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
             placeholder='Your message'
-            className='focus-visible:outline-none focus-visible:border-opacity-100 font-montserrat w-full h-24 bg-transparent border-[1px] rounded-md border-gray-300 border-opacity-30 text-white placeholder:text-gray-500 indent-2'
+            className='placeholder:text-base py-2 text-sm focus-visible:outline-none focus-visible:border-opacity-100 font-montserrat w-full h-24 bg-transparent border-[1px] rounded-md border-gray-300 border-opacity-30 text-white placeholder:text-gray-500 indent-2 resize-none overflow-auto'
           />
+
         </div>
         <div className='w-full md:w-1/2 flex items-center justify-center mt-4'>
           <motion.button
