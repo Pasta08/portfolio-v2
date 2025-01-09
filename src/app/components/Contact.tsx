@@ -1,4 +1,5 @@
 'use client'
+import { motion } from 'motion/react';
 import React, { FormEvent, useState } from 'react';
 
 const Contact = () => {
@@ -55,7 +56,27 @@ const Contact = () => {
           />
         </div>
         <div className='w-full md:w-1/2 flex items-center justify-center mt-4'>
-          <button type="submit" className='w-full md:w-auto bg-transparent text-white border-[1px] rounded-md border-white py-2 min-w-48' >Submit</button>
+          <motion.button
+            type="submit"
+            className='relative w-full md:w-auto bg-transparent text-white border-[1px] rounded-md border-white py-2 min-w-48 overflow-hidden'
+            whileHover="hover"
+            initial="rest"
+            animate="rest"
+            variants={{
+              rest: { color: '#ffffff' },
+              hover: { color: '#ffffff' }
+            }}
+          >
+            <motion.div
+              className="absolute inset-0 bg-success z-[-1]"
+              variants={{
+                rest: { scaleX: 0, originX: 0 },
+                hover: { scaleX: 1, originX: 0, transition: { duration: 0.3, ease: 'easeOut' } }
+              }}
+              style={{ transformOrigin: '0 50%' }}
+            />
+            Submit
+          </motion.button>
         </div>
       </form>
     </div>
