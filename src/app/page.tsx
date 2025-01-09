@@ -35,9 +35,9 @@ export default function Home() {
           <section className="border-[1px] p-2 border-gray-300 border-opacity-30 bg-gray-400 bg-opacity-[0.01] backdrop-blur-sm rounded-xl hover:border-opacity-70 transition-all duration-200 ease-in-out mt-2 md:mt-0">
             <WorkExperience />
           </section>
-          {/* <section className="border-[1px] p-2 border-gray-300 border-opacity-30 bg-gray-400 bg-opacity-[0.01] backdrop-blur-sm rounded-xl hover:border-opacity-70 transition-all duration-200 ease-in-out mt-2 md:mt-3">
+          <section className="border-[1px] py-2 px-3 border-gray-300 border-opacity-30 bg-gray-400 bg-opacity-[0.01] backdrop-blur-sm rounded-xl hover:border-opacity-70 transition-all duration-200 ease-in-out mt-2 md:mt-3">
             <Contact/>
-          </section> */}
+          </section> 
         </div>
       </main>
       <footer className="">
