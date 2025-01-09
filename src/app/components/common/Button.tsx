@@ -15,7 +15,7 @@ const Button: React.FC<Props> = ({ text, primary }) => {
   }
 
   return (
-    <div className={`border-[1px] ${getBorderColor()} border-opacity-30 rounded-xl py-1 px-2 flex justify-center w-full s:w-[90%]`}>
+    <div className={`text-white border-[1px] ${getBorderColor()} border-opacity-30 rounded-xl py-1 px-2 flex justify-center w-full s:w-[90%]`}>
       {text}
     </div>
   )

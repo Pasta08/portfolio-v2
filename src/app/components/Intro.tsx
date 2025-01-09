@@ -14,7 +14,7 @@ const Intro = () => {
         </div>
         <div className='h-fit'>
           <h1 className={`${titleLarge}`}>Ethan Bone Ortega</h1>
-          <h2>Full Stack Developer</h2>
+          <h2 className='text-white'>Full Stack Developer</h2>
         </div>
       </div>
       <div className='flex flex-wrap gap-2 mt-4 md:mt-8'>
